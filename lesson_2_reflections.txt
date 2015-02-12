@@ -1,0 +1,15 @@
+What happens when you initialize a repository? Why do you need to do it?
+It helps to track all the information and history about files.
+It will allow us use git commands.
+
+git init
+
+
+git status
+
+git add
+
+git reset
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+I guess it is sanety check just to make sure that user wants to save those particular files and versions.
