@@ -1,0 +1,74 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+Looking for exact copy and somethings is not the same - check why: is it correct or mistake?
+
+
+Add the line to the end of your .bash_profile which is in home directory:
+echo "export PATH=$PATH:/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin" >>~/.bash_profile
+
+Add the line using via sublime:
+alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
+
+
+By typing this - sublime will open new window with that file name. File will need to be saved:
+subl lesson_1_reflections.txt
+
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+Using github
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+Because the written code in several files is more likely to be linked to each ohther,but in Google docs usually there is not connection in files
+
+Clone git reposetory:
+git clone https://github.com/udacity/asteroids.git
+
+To see all commits:
+git log
+
+To see thru commits:
+~/Projects/version-control/asteroids> git log --all --grep="Revert co*"
+
+
+To see comperisons of two files:
+git diff ID ID
+
+
+To see colored changes:
+git config --global color.ui auto
+
+
+To show 
+git log --stat
+
+
+How can you use the commands git log and git diff to view the history of files?
+Answer: by typing them into terminal. git log allows us to see all the commits and git diff helps to compare.
+
+Git Reposetory is colllection of files
+
+To open html file being in that directory with default browser:
+open index.html
+
+Open with particular browers if not default:
+open -a "Google Chrome" index.html
+
+
+Remove hidden file like .git:
+~/Projects/version-control/asteroids> rm -rf .git
+
+How might using version control make you more confident to make changes that could break something?
+It will allow me to find bugs quickier with better interfase
+
+Some commands to configure git. The terminal will need to be closed and reopen before the changes:
+git config --global core.editor "subl -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+
+Now that you have your workspace set up, what do you want to try using Git for?
+I want to use it to collaborate saftly with other and be able to chage file without fear
+
+
+
+
+
