@@ -13,3 +13,31 @@ git reset
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 I guess it is sanety check just to make sure that user wants to save those particular files and versions.
+
+Reverse git checkout commit id to original:
+git checkout master
+
+Compare a file that is in working directory to the same file in staging area(if present):
+git diff (no args)
+
+Compare a file that is in staging area to the most recent commit in repositrory:
+git diff --staged
+
+Resets all the files in working repo and staging area to the enetial state. !!! Can not be reversed:
+git reset --hard
+
+How can you use the staging area to make sure you have one commit per logical change?
+Stage only file or files that have linked changes.
+
+Command that showes current branch:
+git branch
+
+Command that creates new branch:
+git branch newidillia:
+
+Switch to the desired branch:
+git checkout newidillia
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+I'm not sure about ornanized the history but it help with creating sevral experimental versions and allow to try diffrent things. 
+
