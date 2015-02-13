@@ -70,7 +70,7 @@ Delet lable with name coins. We can still access to commits in master branch:
 git branch -d coins 
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
-It merges unique changes automaticly - saves time and when there is a conflict it asks user to resolvit. Which is important because user can make better decision on end result by looking at conflict.
+Pros unique changes automaticly - saves time, conflict codes can't be resolved by git - not smart enought to know which code is correct. Add and deletion is easy - no need for user to waist time. When there is a conflict git asks user to resolvit. Which is important because user can make better decision on end result by looking at conflict.
 
 
 
