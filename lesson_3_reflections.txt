@@ -1,0 +1,25 @@
+// Regarding Application folder. Need to fix it:
+I have empty Application folder in ~/Applications
+To acces application cd /Applications/
+
+Git located in:
+cd /usr/local/git
+
+Caching your GitHub password in Git.
+https://help.github.com/articles/caching-your-github-password-in-git/
+git credential-osxkeychain
+
+Steps to create and push local repo to github
+
+1. Create repo on github. If we are going to push some repo with commits no need to add readme.
+2. mila (master) reflections $ git remote add origin https://github.com/Idillia/reflections.git
+3. mila (master) reflections $ git remote (should show word origin)
+4. More verbose information
+	mila (master) reflections $git remote -v
+Showes:
+origin	https://github.com/Idillia/reflections.git (fetch)
+origin	https://github.com/Idillia/reflections.git (push)
+5. mila (master) reflections $ git push origin master	
+
+When would you want to use a remote repository rather than keeping all your work local?
+I will use remote when I collaborate with the other people on the same project which can be access from remote repo. 
